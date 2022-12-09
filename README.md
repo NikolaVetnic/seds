@@ -28,4 +28,4 @@ Relacioni model u SQL Developer-u:
 
 ![seds_03](http://nikolapacekvetnic.rs/wp-content/uploads/2022/12/seds_03-scaled.jpg)
 
-Sada je moguce generisati skriptu za kreiranje tabela. Moguci su problemi vezani za duzinu naziva nekih stranih kljuceva, sto je moguce izmeniti direktno u skripti ili na relacionom modelu. Preciscena skripta nalazi se [ovde](#).
+Sada je moguce generisati skriptu za kreiranje tabela. Moguci su problemi vezani za duzinu naziva nekih stranih kljuceva, sto je moguce izmeniti direktno u skripti ili na relacionom modelu. Preciscena skripta nalazi se [ovde](#).gi

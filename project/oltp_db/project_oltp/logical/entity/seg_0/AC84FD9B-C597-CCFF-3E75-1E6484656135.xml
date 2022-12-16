@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="AC84FD9B-C597-CCFF-3E75-1E6484656135" name="NVP_SRC_Agent">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-16 18:22:05 UTC</createdTime>
+<ownerDesignName>project_oltp</ownerDesignName>
+<engineerTo>
+<item key="C8EAF2A9-C39C-7082-DAA9-E7B4639E50FA" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="agId" id="531774ED-C75B-0029-8669-4651F09A5D7B">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-16 18:22:20 UTC</createdTime>
+<ownerDesignName>project_oltp</ownerDesignName>
+<engineerTo>
+<item key="C8EAF2A9-C39C-7082-DAA9-E7B4639E50FA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="agFirstName" id="D5A42D66-CB37-94E8-1CFB-0DA8710581C3">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-16 18:22:29 UTC</createdTime>
+<ownerDesignName>project_oltp</ownerDesignName>
+<engineerTo>
+<item key="C8EAF2A9-C39C-7082-DAA9-E7B4639E50FA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="agLastName" id="A19E71E4-B8CA-9A0A-8531-DE3D59C08824">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-16 18:22:38 UTC</createdTime>
+<ownerDesignName>project_oltp</ownerDesignName>
+<engineerTo>
+<item key="C8EAF2A9-C39C-7082-DAA9-E7B4639E50FA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="agHireDate" id="9E6DC4BB-39BE-F272-3177-C6C2D9244275">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-16 18:23:23 UTC</createdTime>
+<ownerDesignName>project_oltp</ownerDesignName>
+<engineerTo>
+<item key="C8EAF2A9-C39C-7082-DAA9-E7B4639E50FA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="orgId" id="2A02904B-E580-3E24-CE45-3340684A6556">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-16 18:29:01 UTC</createdTime>
+<generatorID>2CF9C24E-D384-DAF7-38BB-622C571C153A</generatorID>
+<ownerDesignName>project_oltp</ownerDesignName>
+<engineerTo>
+<item key="C8EAF2A9-C39C-7082-DAA9-E7B4639E50FA" value="true"/>
+</engineerTo>
+<referedAttribute>4364E444-9932-778A-184B-7A845C3BEE4E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9BD4F1B0-C540-C1C5-7547-85D550998AFA" name="NVP_SRC_Agent PK">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-16 18:22:27 UTC</createdTime>
+<ownerDesignName>project_oltp</ownerDesignName>
+<engineerTo>
+<item key="C8EAF2A9-C39C-7082-DAA9-E7B4639E50FA" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>531774ED-C75B-0029-8669-4651F09A5D7B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

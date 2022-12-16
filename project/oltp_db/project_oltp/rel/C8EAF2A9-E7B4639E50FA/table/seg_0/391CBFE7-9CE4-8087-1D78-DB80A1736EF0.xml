@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="391CBFE7-9CE4-8087-1D78-DB80A1736EF0" name="NVP_SRC_City">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-16 20:56:48 UTC</createdTime>
+<generatorID>7A20D874-EF79-23FA-1838-E4E4455BABA1</generatorID>
+<ownerDesignName>project_oltp</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cityId" id="5E0DFCE4-7B9E-CF8E-7222-88F856EF4DD4">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-16 20:56:48 UTC</createdTime>
+<generatorID>9DC80FB7-7972-002B-C679-B3B1ED8498AD</generatorID>
+<ownerDesignName>project_oltp</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cityName" id="87DE503A-0346-C316-0135-A5050D9E873E">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-16 20:56:48 UTC</createdTime>
+<generatorID>E7917041-3EBB-FC4B-A632-0827B0B066EC</generatorID>
+<ownerDesignName>project_oltp</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cityPopulation" id="B0767F28-8CBF-B55C-1D44-A036E050BDB2">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-16 20:56:48 UTC</createdTime>
+<generatorID>5B07E17A-D9F5-E218-C17D-72F23C279346</generatorID>
+<ownerDesignName>project_oltp</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NVP_SRC_Region_regId" id="9064D135-624F-CDA9-0656-C98331C9C3F9">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-16 20:56:48 UTC</createdTime>
+<generatorID>B6973678-2A18-B649-97A7-4CE415EC2979</generatorID>
+<ownerDesignName>project_oltp</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E00C781C-3CFC-8A15-6D87-F5EC70F3D5A6" referredColumn="155BBDBE-2826-BC12-1230-FBFA113CB4D6"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="947A47A7-8EEF-7667-E7E5-21923A2CF0AC" name="NVP_SRC_City_PK">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-16 20:56:48 UTC</createdTime>
+<generatorID>D351E791-F3EA-7173-BEBB-B232715A7697</generatorID>
+<ownerDesignName>project_oltp</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5E0DFCE4-7B9E-CF8E-7222-88F856EF4DD4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7D3AA0CE-1E1A-5906-C404-7F1C0568D7EA" name="NVP_SRC_Region_FK">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-16 20:56:48 UTC</createdTime>
+<generatorID>2F7C00A6-742E-A44D-6AB3-00C7B0874FC2</generatorID>
+<ownerDesignName>project_oltp</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9064D135-624F-CDA9-0656-C98331C9C3F9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,123 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="39B82734-DDA0-BB1D-3C0A-E5995E4BBB8C" name="NVP_SRC_Customer">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-16 18:00:24 UTC</createdTime>
+<ownerDesignName>project_oltp</ownerDesignName>
+<engineerTo>
+<item key="C8EAF2A9-C39C-7082-DAA9-E7B4639E50FA" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="custId" id="86DCD629-BBA2-770D-7F7C-7D6A56CFAC53">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-16 18:00:33 UTC</createdTime>
+<ownerDesignName>project_oltp</ownerDesignName>
+<engineerTo>
+<item key="C8EAF2A9-C39C-7082-DAA9-E7B4639E50FA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="custFirstName" id="CCF7E9A1-54BE-87CC-1F47-46DDDDD39BBC">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-16 18:01:00 UTC</createdTime>
+<ownerDesignName>project_oltp</ownerDesignName>
+<engineerTo>
+<item key="C8EAF2A9-C39C-7082-DAA9-E7B4639E50FA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="custLastName" id="1E01A0CA-5532-B020-25D3-85EAAC34C2A8">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-16 18:01:22 UTC</createdTime>
+<ownerDesignName>project_oltp</ownerDesignName>
+<engineerTo>
+<item key="C8EAF2A9-C39C-7082-DAA9-E7B4639E50FA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="custDateOfBirth" id="5AFC8273-BE5E-5878-354F-89A0D4541627">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-16 18:01:36 UTC</createdTime>
+<ownerDesignName>project_oltp</ownerDesignName>
+<engineerTo>
+<item key="C8EAF2A9-C39C-7082-DAA9-E7B4639E50FA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="custAddress" id="7570C0FB-95BE-E353-F261-3849507D6D6E">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-16 18:02:36 UTC</createdTime>
+<ownerDesignName>project_oltp</ownerDesignName>
+<engineerTo>
+<item key="C8EAF2A9-C39C-7082-DAA9-E7B4639E50FA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="custPhone" id="B5CDCFDA-C353-677C-21D1-5A42799B9D4A">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-16 18:03:05 UTC</createdTime>
+<ownerDesignName>project_oltp</ownerDesignName>
+<engineerTo>
+<item key="C8EAF2A9-C39C-7082-DAA9-E7B4639E50FA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cityId" id="05D02629-986F-BCCA-6064-EB0CE4989111">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-16 18:11:53 UTC</createdTime>
+<generatorID>2C09C2DE-250C-8C7D-5626-4AFD37FCC173</generatorID>
+<ownerDesignName>project_oltp</ownerDesignName>
+<engineerTo>
+<item key="C8EAF2A9-C39C-7082-DAA9-E7B4639E50FA" value="true"/>
+</engineerTo>
+<referedAttribute>9DC80FB7-7972-002B-C679-B3B1ED8498AD</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="08AC94C6-9DEB-F0B3-DA8B-FC04EC7FB351" name="Customer PK">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-16 18:00:53 UTC</createdTime>
+<ownerDesignName>project_oltp</ownerDesignName>
+<engineerTo>
+<item key="C8EAF2A9-C39C-7082-DAA9-E7B4639E50FA" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>86DCD629-BBA2-770D-7F7C-7D6A56CFAC53</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

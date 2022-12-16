@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="guide_excursion" directorySegmentName="seg_0" id="E57B137F-0471-C8C9-7247-1E2152D57A42">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-16 18:53:37 UTC</createdTime>
+<ownerDesignName>project_oltp</ownerDesignName>
+<engineerTo>
+<item key="C8EAF2A9-C39C-7082-DAA9-E7B4639E50FA" value="true"/>
+</engineerTo>
+<sourcePk>AC92CE6C-7A41-CBE5-B449-94CAAA1FB697</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>963D29DC-F772-7838-4573-AEDE7F874510</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>E16F94D3-B44C-20AB-4A74-92ECB803E530</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

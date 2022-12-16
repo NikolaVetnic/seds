@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="855D96EB-C25D-5013-6A14-77E92B70D16C" name="NVP_SRC_Organization">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-16 20:56:48 UTC</createdTime>
+<generatorID>33A0F6BE-7A05-61ED-6793-ED743DC65045</generatorID>
+<ownerDesignName>project_oltp</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="orgId" id="7123B392-4B72-DDE8-7CEB-3DA0953BD792">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-16 20:56:48 UTC</createdTime>
+<generatorID>4364E444-9932-778A-184B-7A845C3BEE4E</generatorID>
+<ownerDesignName>project_oltp</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="orgName" id="D2122D96-CB31-89EB-DFE7-2E20B2CC1563">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-16 20:56:48 UTC</createdTime>
+<generatorID>B745C99D-28D3-D9AD-0F44-DF335333F8E9</generatorID>
+<ownerDesignName>project_oltp</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="orgAddress" id="9916FB3B-3672-B070-A127-DE9128FD639E">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-16 20:56:48 UTC</createdTime>
+<generatorID>63D53020-9611-7FB3-5B53-A630ABD66113</generatorID>
+<ownerDesignName>project_oltp</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="orgPhone" id="F6EF1E4C-7F30-B13F-8DEF-522DA8AF17FA">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-16 20:56:48 UTC</createdTime>
+<generatorID>A9E53B4F-48F5-848A-DBF3-E19EC6E3437D</generatorID>
+<ownerDesignName>project_oltp</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="orgEmail" id="A25FB68E-241B-774F-873E-C7628FE6F66F">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-16 20:56:48 UTC</createdTime>
+<generatorID>54762BC1-2601-1F77-AF01-D4B26C0D57DC</generatorID>
+<ownerDesignName>project_oltp</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NVP_SRC_City_cityId" id="1761C22C-3087-079A-E806-54EF073D1FC7">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-16 20:56:48 UTC</createdTime>
+<generatorID>C202DF05-532E-3C2F-4DAE-A4355CFE3E7F</generatorID>
+<ownerDesignName>project_oltp</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C76609A8-3BA4-6BDF-A237-594FE89710CC" referredColumn="5E0DFCE4-7B9E-CF8E-7222-88F856EF4DD4"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8FB22CB3-A266-8978-0A7D-CBEB371E9F0F" name="NVP_SRC_Organization_PK">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-16 20:56:48 UTC</createdTime>
+<generatorID>7CF025A5-AE48-483F-C1D1-4328FF162FBA</generatorID>
+<ownerDesignName>project_oltp</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7123B392-4B72-DDE8-7CEB-3DA0953BD792"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2D4C992F-0443-3E74-D87D-48A24555FE91" name="NVP_SRC_City_FKv3">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-16 20:56:48 UTC</createdTime>
+<generatorID>45AF47FA-6A5A-D3F3-6646-9D787DA31AC7</generatorID>
+<ownerDesignName>project_oltp</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1761C22C-3087-079A-E806-54EF073D1FC7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

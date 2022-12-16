@@ -126,4 +126,7 @@ Neki primeri:
 -   pracenje tekucih racuna
 -   rezervacije turistickih putovanja
 
-`STAO NA SEDS_20211110_090606-Meeting Recording.mp4 01:37:38`
+## Linkovi
+
+[https://www.mockaroo.com/](https://www.mockaroo.com/)
+[https://png2jpg.com/](https://png2jpg.com/)

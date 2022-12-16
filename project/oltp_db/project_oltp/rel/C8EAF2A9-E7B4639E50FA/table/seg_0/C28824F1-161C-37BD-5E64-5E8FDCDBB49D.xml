@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C28824F1-161C-37BD-5E64-5E8FDCDBB49D" name="NVP_SRC_Region">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-16 20:56:48 UTC</createdTime>
+<generatorID>D58A7245-0B33-5536-8F94-E11678F35F71</generatorID>
+<ownerDesignName>project_oltp</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="regId" id="155BBDBE-2826-BC12-1230-FBFA113CB4D6">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-16 20:56:48 UTC</createdTime>
+<generatorID>1526BE91-1848-83F1-95FB-61F5F735B509</generatorID>
+<ownerDesignName>project_oltp</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="regName" id="0C6E9A7B-82BA-F63B-C833-B4A582AD4A9D">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-16 20:56:48 UTC</createdTime>
+<generatorID>86731199-2220-9F04-F56A-6BA76797BD46</generatorID>
+<ownerDesignName>project_oltp</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="countryId" id="601726D4-54C0-34C0-9C65-DAC229917D97">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-16 20:56:48 UTC</createdTime>
+<generatorID>3770FE3E-773B-3B12-6D60-BA2D7A21EC10</generatorID>
+<ownerDesignName>project_oltp</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="countryName" id="4CE3CD83-E854-A1D7-A974-75248CBD7BF2">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-16 20:56:48 UTC</createdTime>
+<generatorID>3BCB78FF-6D2E-5F81-16C4-4DBE6D298B16</generatorID>
+<ownerDesignName>project_oltp</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D535BE40-AA83-8548-2175-7D018F679CBF" name="NVP_SRC_Region_PK">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-16 20:56:48 UTC</createdTime>
+<generatorID>0E39F39A-A680-F93B-19F4-957EFE7D5CEF</generatorID>
+<ownerDesignName>project_oltp</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="155BBDBE-2826-BC12-1230-FBFA113CB4D6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

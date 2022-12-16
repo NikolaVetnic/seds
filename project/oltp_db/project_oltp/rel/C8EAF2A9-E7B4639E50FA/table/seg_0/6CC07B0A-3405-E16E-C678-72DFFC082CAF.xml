@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6CC07B0A-3405-E16E-C678-72DFFC082CAF" name="NVP_SRC_Hotel">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-16 20:56:48 UTC</createdTime>
+<generatorID>E0B9291F-1766-D459-954F-1792B335D648</generatorID>
+<ownerDesignName>project_oltp</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="hotId" id="C0BE050E-8EE0-028D-A1A6-81EB3572D5F0">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-16 20:56:48 UTC</createdTime>
+<generatorID>AF401C17-5B0D-09F7-FFA8-A1DEED49C2E0</generatorID>
+<ownerDesignName>project_oltp</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hotName" id="66B85DA5-5AE4-0AAF-AC80-8D7507D527FB">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-16 20:56:48 UTC</createdTime>
+<generatorID>167C6A26-65E7-A5D9-6BCB-916748F5AB68</generatorID>
+<ownerDesignName>project_oltp</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hotAddress" id="B518A701-903C-79E9-6E52-E0BA3A584F38">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-16 20:56:48 UTC</createdTime>
+<generatorID>0A328B21-308F-1733-5642-34E4BB1C1779</generatorID>
+<ownerDesignName>project_oltp</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hotPhone" id="6FC9FCAB-1CBD-0954-0D9D-37A3A5D1931B">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-16 20:56:48 UTC</createdTime>
+<generatorID>6FC7E66D-FE2B-0476-7844-449DAF0D88EA</generatorID>
+<ownerDesignName>project_oltp</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NVP_SRC_City_cityId" id="14EA03AE-B34D-624E-7615-838FE232AC8B">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-16 20:56:48 UTC</createdTime>
+<generatorID>41D920FF-6110-9855-3388-29BB175C8785</generatorID>
+<ownerDesignName>project_oltp</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ACC11BD4-77DA-CF23-4889-7BD55FEAEF46" referredColumn="5E0DFCE4-7B9E-CF8E-7222-88F856EF4DD4"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="573FC944-196D-DE01-4D37-044E1E3910E7" name="NVP_SRC_Hotel_PK">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-16 20:56:48 UTC</createdTime>
+<generatorID>4B79DBB3-B733-3E0C-9626-4D0AEC8BEA96</generatorID>
+<ownerDesignName>project_oltp</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C0BE050E-8EE0-028D-A1A6-81EB3572D5F0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C922A9DB-3D4D-A81C-A2F4-98C6E791FD2B" name="NVP_SRC_City_FKv2">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-16 20:56:48 UTC</createdTime>
+<generatorID>F7D3C337-7BCE-E9FE-5582-90F1A3A2CCDE</generatorID>
+<ownerDesignName>project_oltp</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="14EA03AE-B34D-624E-7615-838FE232AC8B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

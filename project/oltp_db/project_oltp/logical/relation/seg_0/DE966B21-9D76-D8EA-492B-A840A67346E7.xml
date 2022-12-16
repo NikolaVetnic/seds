@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="hotel_tour" directorySegmentName="seg_0" id="DE966B21-9D76-D8EA-492B-A840A67346E7">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-16 18:40:24 UTC</createdTime>
+<ownerDesignName>project_oltp</ownerDesignName>
+<engineerTo>
+<item key="C8EAF2A9-C39C-7082-DAA9-E7B4639E50FA" value="true"/>
+</engineerTo>
+<sourcePk>4B79DBB3-B733-3E0C-9626-4D0AEC8BEA96</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>E0B9291F-1766-D459-954F-1792B335D648</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>368F94D0-8A8D-FF2F-25A2-AD3A066730AF</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

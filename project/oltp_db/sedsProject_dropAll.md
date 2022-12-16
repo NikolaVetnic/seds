@@ -1,0 +1,11 @@
+```SQL
+    DROP TABLE nvp_src_agent CASCADE CONSTRAINTS;
+    DROP TABLE nvp_src_city CASCADE CONSTRAINTS;
+    DROP TABLE nvp_src_customer CASCADE CONSTRAINTS;
+    DROP TABLE nvp_src_excursion CASCADE CONSTRAINTS;
+    DROP TABLE nvp_src_guide CASCADE CONSTRAINTS;
+    DROP TABLE nvp_src_hotel CASCADE CONSTRAINTS;
+    DROP TABLE nvp_src_organization CASCADE CONSTRAINTS;
+    DROP TABLE nvp_src_region CASCADE CONSTRAINTS;
+    DROP TABLE nvp_src_tour CASCADE CONSTRAINTS;
+```

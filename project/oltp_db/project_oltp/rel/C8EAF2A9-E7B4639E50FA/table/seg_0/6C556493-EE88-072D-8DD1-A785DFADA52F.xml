@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6C556493-EE88-072D-8DD1-A785DFADA52F" name="NVP_SRC_Agent">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-16 20:56:48 UTC</createdTime>
+<generatorID>AC84FD9B-C597-CCFF-3E75-1E6484656135</generatorID>
+<ownerDesignName>project_oltp</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="agId" id="868F4037-628A-EEEB-60B1-1CE2D9F1A6FF">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-16 20:56:48 UTC</createdTime>
+<generatorID>531774ED-C75B-0029-8669-4651F09A5D7B</generatorID>
+<ownerDesignName>project_oltp</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="agFirstName" id="7B9E211B-83B2-855C-6295-5C9234654EBC">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-16 20:56:48 UTC</createdTime>
+<generatorID>D5A42D66-CB37-94E8-1CFB-0DA8710581C3</generatorID>
+<ownerDesignName>project_oltp</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="agLastName" id="E497DB5B-86EA-33A9-4BF0-1F3597E5E8CC">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-16 20:56:48 UTC</createdTime>
+<generatorID>A19E71E4-B8CA-9A0A-8531-DE3D59C08824</generatorID>
+<ownerDesignName>project_oltp</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="agHireDate" id="FEDBBC76-BE6A-BE6C-D85D-F8B6A0A40660">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-16 20:56:48 UTC</createdTime>
+<generatorID>9E6DC4BB-39BE-F272-3177-C6C2D9244275</generatorID>
+<ownerDesignName>project_oltp</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NVP_SRC_Organization_orgId" id="6575DA1C-2239-E6B9-4B6A-E96D76AA108E">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-16 20:56:48 UTC</createdTime>
+<generatorID>2A02904B-E580-3E24-CE45-3340684A6556</generatorID>
+<ownerDesignName>project_oltp</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="79A930EF-3E52-8E5A-F2AE-84C90AF5E4D2" referredColumn="7123B392-4B72-DDE8-7CEB-3DA0953BD792"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="756ECF57-610F-A1CF-DCF0-71F5CD2D8887" name="NVP_SRC_Agent_PK">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-16 20:56:48 UTC</createdTime>
+<generatorID>9BD4F1B0-C540-C1C5-7547-85D550998AFA</generatorID>
+<ownerDesignName>project_oltp</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="868F4037-628A-EEEB-60B1-1CE2D9F1A6FF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C26B9F3B-32DB-B657-4211-FAD01A63603B" name="NVP_SRC_Organization_FK">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-16 20:56:48 UTC</createdTime>
+<generatorID>2CF9C24E-D384-DAF7-38BB-622C571C153A</generatorID>
+<ownerDesignName>project_oltp</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6575DA1C-2239-E6B9-4B6A-E96D76AA108E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

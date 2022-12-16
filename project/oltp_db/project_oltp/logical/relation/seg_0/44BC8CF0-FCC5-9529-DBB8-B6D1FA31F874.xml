@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="cust_tour" directorySegmentName="seg_0" id="44BC8CF0-FCC5-9529-DBB8-B6D1FA31F874">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-16 18:39:29 UTC</createdTime>
+<ownerDesignName>project_oltp</ownerDesignName>
+<engineerTo>
+<item key="C8EAF2A9-C39C-7082-DAA9-E7B4639E50FA" value="true"/>
+</engineerTo>
+<sourcePk>08AC94C6-9DEB-F0B3-DA8B-FC04EC7FB351</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>39B82734-DDA0-BB1D-3C0A-E5995E4BBB8C</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>368F94D0-8A8D-FF2F-25A2-AD3A066730AF</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

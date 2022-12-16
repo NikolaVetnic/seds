@@ -1,0 +1,134 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="13B224EE-7025-5265-AF69-05273EE366F6" name="NVP_SRC_Excursion">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-16 20:56:48 UTC</createdTime>
+<generatorID>E16F94D3-B44C-20AB-4A74-92ECB803E530</generatorID>
+<ownerDesignName>project_oltp</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="exId" id="501DA053-C238-0B37-3694-834A19212B1B">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-16 20:56:48 UTC</createdTime>
+<generatorID>8B551322-E8BB-75CE-FE17-871B2BCAEBF7</generatorID>
+<ownerDesignName>project_oltp</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="exFrom" id="E40CB9C5-F90B-C1EA-2FA0-12B27D67EF41">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-16 20:56:48 UTC</createdTime>
+<generatorID>BAB9F55D-7B34-25D6-FD7D-E3A3ADD964FF</generatorID>
+<ownerDesignName>project_oltp</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>91229484-D19C-D458-8647-333C7FFE7B60</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="exTo" id="BF5027E5-0FC3-F8B6-0AF9-F7967A103B68">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-16 20:56:48 UTC</createdTime>
+<generatorID>46CEA596-BE14-B8D4-8545-29844150497A</generatorID>
+<ownerDesignName>project_oltp</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>91229484-D19C-D458-8647-333C7FFE7B60</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="exLocation" id="EA338E26-97A5-A345-2E74-ABB1AB15F006">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-16 20:56:48 UTC</createdTime>
+<generatorID>9633BFA2-64FF-D095-850D-4C3C0653B09E</generatorID>
+<ownerDesignName>project_oltp</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="exRating" id="1C061B44-AD3B-A3F8-F79B-0F504A761051">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-16 20:56:48 UTC</createdTime>
+<generatorID>02C87E14-DE58-D3DF-0A6D-719480EFF69B</generatorID>
+<ownerDesignName>project_oltp</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NVP_SRC_Guide_guId" id="75511F57-0139-6CD7-031D-52A3BC38875E">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-16 20:56:48 UTC</createdTime>
+<generatorID>8B6F0106-78BC-9FAA-1B4F-A89E45E75D57</generatorID>
+<ownerDesignName>project_oltp</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="96FA109E-3FB4-E1FF-9BAC-29EE730FFBEB" referredColumn="9668199D-B114-4667-91A8-4EF134AF5426"/>
+</associations>
+</Column>
+<Column name="NVP_SRC_Tour_tourId" id="CDAECA5C-8962-619B-4749-5C22302E7B37">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-16 20:56:48 UTC</createdTime>
+<generatorID>4DCFEF77-25AD-A8E6-5F7D-4C6C2EE5E77C</generatorID>
+<ownerDesignName>project_oltp</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A5B1ACBB-AAF2-C371-EA24-148FD8B8928B" referredColumn="3686D291-60D8-6415-2E45-43B582110D53"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7B5849FB-B3ED-D6D8-2D24-A4FD010A2B08" name="NVP_SRC_Excursion_PK">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-16 20:56:48 UTC</createdTime>
+<generatorID>A50B2593-92CE-245E-B522-A7992C466B6C</generatorID>
+<ownerDesignName>project_oltp</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="501DA053-C238-0B37-3694-834A19212B1B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DD6942EC-D396-95AF-B640-A4CF941F95CE" name="NVP_SRC_Guide_FK">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-16 20:56:48 UTC</createdTime>
+<generatorID>E57B137F-0471-C8C9-7247-1E2152D57A42</generatorID>
+<ownerDesignName>project_oltp</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="75511F57-0139-6CD7-031D-52A3BC38875E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FDEC3D3A-0C5E-AB3A-3821-F2FFD1F7211F" name="NVP_SRC_Tour_FK">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-16 20:56:49 UTC</createdTime>
+<generatorID>99216BB7-F5A5-7799-F2AD-531C8E2CC938</generatorID>
+<ownerDesignName>project_oltp</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CDAECA5C-8962-619B-4749-5C22302E7B37"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

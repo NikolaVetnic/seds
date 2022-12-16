@@ -26,7 +26,7 @@ Logicki model u SQL Developer-u:
 
 Relacioni model u SQL Developer-u:
 
-![seds_02](http://nikolapacekvetnic.rs/wp-content/uploads/2022/12/seds_02_upd-scaled.jpg)
+![seds_02](http://nikolapacekvetnic.rs/wp-content/uploads/2022/12/seds_02-upd2-scaled.jpg)
 
 Sada je moguce generisati skriptu za kreiranje tabela. Moguci su problemi vezani za duzinu naziva nekih stranih kljuceva, sto je moguce izmeniti direktno u skripti ili na relacionom modelu. Preciscena skripta nalazi se [ovde](https://github.com/NikolaVetnic/seds/blob/master/seds_OtplGenerationScript.md). Skripta se kopira u SQL konzolu, pokrece se i tako se generisu tabele u bazi.
 

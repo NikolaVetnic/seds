@@ -22,13 +22,13 @@ Za crtanje seme baze podataka u Oracle SQL Developer-u koristimo Data Modeler: `
 
 Logicki model u SQL Developer-u:
 
-![seds_02](http://nikolapacekvetnic.rs/wp-content/uploads/2022/12/seds_02-scaled.jpg)
+![seds_02](http://nikolapacekvetnic.rs/wp-content/uploads/2022/12/seds_03-scaled.jpg)
 
 Relacioni model u SQL Developer-u:
 
-![seds_03](http://nikolapacekvetnic.rs/wp-content/uploads/2022/12/seds_03-scaled.jpg)
+![seds_03](http://nikolapacekvetnic.rs/wp-content/uploads/2022/12/seds_02-scaled.jpg)
 
-Sada je moguce generisati skriptu za kreiranje tabela. Moguci su problemi vezani za duzinu naziva nekih stranih kljuceva, sto je moguce izmeniti direktno u skripti ili na relacionom modelu. Preciscena skripta nalazi se [ovde](https://github.com/NikolaVetnic/seds/blob/master/seds_OtplGenerationScript.txt). Skripta se kopira u SQL konzolu, pokrece se i tako se generisu tabele u bazi.
+Sada je moguce generisati skriptu za kreiranje tabela. Moguci su problemi vezani za duzinu naziva nekih stranih kljuceva, sto je moguce izmeniti direktno u skripti ili na relacionom modelu. Preciscena skripta nalazi se [ovde](https://github.com/NikolaVetnic/seds/blob/master/seds_OtplGenerationScript.md). Skripta se kopira u SQL konzolu, pokrece se i tako se generisu tabele u bazi.
 
 ## 2 Vezbe
 
@@ -69,6 +69,14 @@ Kod veza izmedju tabela dimenzija veze su uvek `(0, N) - (1, 1)`, gde je leva st
 
 U vremenskoj dimenziji imacemo `timeId` kao kljuc vremenske dimenzije (svaka tabela ce imati svoj ID). Razlog izdvajanja vremenske dimenzije je taj sto, buduci da za svaku kupovinu imamo datum, zelimo da kupovinu povezemo sa unosom u bazi `Time`, odnosno da vise kupovina bude vezana za jednu jedinicu vremena granulacije koju smo mi odredili. Na taj nacin mozemo brzo da pronadjemo sve prodaje koje su se desile npr. u novembru 2021. godine.
 
-Skripta za generisanje tabela za DW bazu se nalazi [ovde](https://github.com/NikolaVetnic/seds/blob/master/seds_DwGenerationScript.txt).
+Skripta za generisanje tabela za DW bazu se nalazi [ovde](https://github.com/NikolaVetnic/seds/blob/master/seds_DwGenerationScript.md).
 
-Sledeci korak je popunjavanje OLTP baze nekakvim podacima, a posle toga cemo popuniti DW bazu transformacijom sadrzaja OLTP baze. `STAO NA SEDS_20211110_090606-Meeting Recording.mp4 00:47:53`
+Sledeci korak je popunjavanje OLTP baze nekakvim podacima, a posle toga cemo popuniti DW bazu transformacijom sadrzaja OLTP baze.
+
+### 2.3 Popunjavanje OLTP baze
+
+Za popunjavanje baze koristicemo sajt [Mockaroo](https://www.mockaroo.com/). Sajt omogucava navodjenje atributa po imenu i odredjivanje njihovog tipa, nakon cega je moguce generisati 1000 redova _mock_ podataka. Prvo generisemo 1000 musterija, a zatim generisemo narudzbine (_orders_) za te musterije, od kojih ce svaka imati i svoje proizvode (_order items_). S druge strane, tabele _Region_ - `nv_src_region`, _City_ - `nv_src_city`, i _Product_ - `nv_src_product` - ce imati realne podatke.
+
+Skripta za popunjavanje tabele `nv_src_region` je [ovde](https://github.com/NikolaVetnic/seds/blob/master/seds_fillScript_Region.md), za popunjavanje `nv_src_city` je [ovde](https://github.com/NikolaVetnic/seds/blob/master/seds_fillScript_City.md).
+
+Kod generisanja podataka koji sadrze datum, na Mockaroo-u je bitno navesti Oracle format datuma, odnosno `dd-Mon-yyyy`. Polje `nv_src_c_cityid` predstavlja strani kljuc odnosno vezu sa tabelom `nv_src_city`, tako da i to mozemo izgenerisati kao integer u opsegu u kom su kljucevi koje smo uneli (na Mockaroo-u je to `number` sa parametrima `min: 1`, `max: 25`, `decimals: 0`) .

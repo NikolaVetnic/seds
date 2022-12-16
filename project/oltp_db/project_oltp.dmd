@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="project_oltp" id="68043145-458F-B02B-C26A-3DB7F8DDE352" version="3.5">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-16 17:58:38 UTC</createdTime>
+<ownerDesignName>project_oltp</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>68043145-458F-B02B-C26A-3DB7F8DDE352</designId>
+</OSDM_Design>

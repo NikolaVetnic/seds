@@ -85,4 +85,45 @@ Potrebno je popuniti svaku od sedam tabela OLTP baze:
 -   `NV_SRC_Order`: ova tabela se popunjava pomocu [skripte](https://github.com/NikolaVetnic/seds/blob/master/seds_fillScript_Order.md)
 -   `NV_SRC_OrderItem`: ovu tabelu je moguce generisati ili popuniti pomocu [skripte](https://github.com/NikolaVetnic/seds/blob/master/seds_fillScript_OrderItem.md)
 
-`STAO NA SEDS_20211110_090606-Meeting Recording.mp4 01:32:10`
+## X Projekat
+
+### X.1 Beleske sa casa
+
+Napraviti prvo OLTP bazu koja ima bar 6-7 tabela (u paru bar 10), podatke izgenerisati ili iz fajlova koje smo skinuli ili nesto bzvz (Mockaroo), bitno je da tabele imaju dosta podataka (bar nekih 1000 redova)
+
+Treba osmisliti sta su poslovni procesi koje cemo pratiti (koji su studenti polozili ispita, ispita u toku godine, studenata polozilo neki predmet, upiti - na kraju za izvestaje, po tri izvestaja na kraju - u paru znaci tri po coveku)
+
+U zavisnosti od upita (izvestaja na kraju) tako ce se praviti i DW baza, moze biti pokriveno jednom tabelom cinjenica (ako se moze izvuci sve sto treba), ali moze biti i sema pahuljice (dve tabele cinjenica, zavisi sta su ciljevi)
+
+Kad se napravi DW sema prave se transformacije, da popunimo sve tabele dimenzija i na kraju tabelu cinjenica, transformisati podatke, agregatne f-je, zavisi od modela
+
+Na kraju izvestavanje - ta pitanja koja smo postavili, napraviti izvestaje za njih, izvestaj je u obliku tabele ili u obliku grafikona (bar jedan u vidu grafikona, prosecna ocena studenata, linijski ili stubicasti ili nesto)
+
+### X.2 Beleske sa snimka
+
+Treba da u prvom delu napisemo sta je neka motivacija i ciljevi, odnosno o cemu se radi u primeru, opise se da u tom nasem preduzecu ili sta vec podaci su sacuvani u OLTP bazi podataka i u nekim spoljnim datotekama i posto su potrebne slozenije analize onda se javila potreba za uvodjenjem DW-a, u nasem primeru za porudzbine on ce objediniti sve podatke o porudzbinama i omogucice analizu prodaje po proizvodima, kupcima, gradovima ili kako vec odlucimo, zavisi od granularnosti.
+
+Opis zadatka i plan realizacije, sta je izvorni sistem (samo OLTP baza, eventualno neki Excel fajlovi), treba da predstavimo nasu OLTP bazu podataka, znaci imacemo evidenciju o porudzbinama, evidenciju o zaposlenima (moze biti TXT ili Excel fajl sa podacima), mozemo recimo imati spoljni fajl koji definise opsege starosti (bracketing dimensions) pa da se na osnovu toga odredjuje kategorija korisnika (uzimajuci u obzir datum rodjenja).
+
+Zatim treba opisati kako izgleda DW baza, koje se dimenzije koriste (mi smo rekli jedna dimenzija je prostorna - kupci, gradovi, regije, drzave - a imamo i dimenziju za proizvod - product i productFamily - i vremensku dimenziju, a u tabeli cinjenica - Sales - imacemo podatke o prodaji odredjenih proizvoda po kupcima). Prikazemo OLTP i DW baze... Prikazemo sta su izvorni podaci (sajt za generisanje, TXT fajlovi). Uoceni poslovni procesi - rec je o BUS matrici koja je pravljena (kod nas je jedan poslovni proces u primeru, moze i vise).
+
+Zatim pitanja na koja treba odgovoriti: iz kojih gradova/regiona se najvise kupuje, iz kojih gradova/regiona se najvise kupuju proizvodi neke vrste, koji proizvod je najprodavaniji u prethodnih mesec/godinu dana?
+
+Ocekivani rezultati su analiza kupovina po gradovima/regijama i po vrstama proizvoda (vrste analize koje se ovom STAR shemom mogu pokriti i za koje se mogu dobiti izvestaji iz ovakve DW - jos se naziva i OLAP - baze).
+
+Opis ECTL procesa - kako se popunjavaju tabele cinjenica i tabele dimenzija - bice da se nacrtaju procesi koji su sluzili za transformaciju podataka, i na kraju u okviru dobijenih rezultat i izvestaja treba napraviti nekoliko izvestaja.
+
+U zakljucku - da li su dobijeni odgovori na postavljena pitanja.
+
+### X.3 Primeri projekata sa snimka
+
+Neki primeri:
+
+-   pracenje vremenske prognoze
+-   rezervacija avio karata
+-   evidencija telefonskih razgovora
+-   pracenje nekog poslovanja u periodima vremena
+-   pracenje tekucih racuna
+-   rezervacije turistickih putovanja
+
+`STAO NA SEDS_20211110_090606-Meeting Recording.mp4 01:37:38`

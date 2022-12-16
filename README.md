@@ -75,8 +75,14 @@ Sledeci korak je popunjavanje OLTP baze nekakvim podacima, a posle toga cemo pop
 
 ### 2.3 Popunjavanje OLTP baze
 
-Za popunjavanje baze koristicemo sajt [Mockaroo](https://www.mockaroo.com/). Sajt omogucava navodjenje atributa po imenu i odredjivanje njihovog tipa, nakon cega je moguce generisati 1000 redova _mock_ podataka. Prvo generisemo 1000 musterija, a zatim generisemo narudzbine (_orders_) za te musterije, od kojih ce svaka imati i svoje proizvode (_order items_). S druge strane, tabele _Region_ - `nv_src_region`, _City_ - `nv_src_city`, i _Product_ - `nv_src_product` - ce imati realne podatke.
+Potrebno je popuniti svaku od sedam tabela OLTP baze:
 
-Skripta za popunjavanje tabele `nv_src_region` je [ovde](https://github.com/NikolaVetnic/seds/blob/master/seds_fillScript_Region.md), za popunjavanje `nv_src_city` je [ovde](https://github.com/NikolaVetnic/seds/blob/master/seds_fillScript_City.md).
+-   `NV_SRC_Region` : ova tabela se popunjava pomocu [skripte](https://github.com/NikolaVetnic/seds/blob/master/seds_fillScript_Region.md)
+-   `NV_SRC_City` : ova tabela se takodje popunjava pomocu [skripte](https://github.com/NikolaVetnic/seds/blob/master/seds_fillScript_City.md)
+-   `NV_SRC_Salesperson` : podatke za ovu tabelu generisemo preko [Mockaroo-a](https://www.mockaroo.com/) gde su potrebna polja `spId`, `spFirstName`, `spLastName` i `spHireDate`, primer skripte je dostupan [ovde](https://github.com/NikolaVetnic/seds/blob/master/seds_fillScript_Salesperson.md)
+-   `NV_SRC_Customer` : podatke za ovu tabelu takodje generisemo preko [Mockaroo-a](https://www.mockaroo.com/) gde su potrebna polja `custId`, `custFirstName`, `custLastName`, `custDateOfBirth` (bitno je navesti Oracle format datuma, odnosno `dd-Mon-yyyy`), `custAddress`, `custPhone`, `NV_SRC_City_cityId` (), `NV_SRC_Salesperson_spId` (ovo polje predstavlja strani kljuc odnosno vezu sa tabelom `NV_SRC_City`, tako da i to mozemo izgenerisati kao celobrojnu vrednost u opsegu u kom su kljucevi koje smo uneli - na Mockaroo-u je to `number` sa parametrima `min: 1`, `max: 25`, `decimals: 0`), primer skripte je dostupan [ovde](https://github.com/NikolaVetnic/seds/blob/master/seds_fillScript_Customer.md)
+-   `NV_SRC_Product` : podatke za ovu tabelu takodje je moguce generisati preko [Mockaroo-a](https://www.mockaroo.com/), s tim da je u mom slucaju koriscena sledeca [skripta](https://github.com/NikolaVetnic/seds/blob/master/seds_fillScript_Product.md)
+-   `NV_SRC_Order`: ova tabela se popunjava pomocu [skripte](https://github.com/NikolaVetnic/seds/blob/master/seds_fillScript_Order.md)
+-   `NV_SRC_OrderItem`: ovu tabelu je moguce generisati ili popuniti pomocu [skripte](https://github.com/NikolaVetnic/seds/blob/master/seds_fillScript_OrderItem.md)
 
-Kod generisanja podataka koji sadrze datum, na Mockaroo-u je bitno navesti Oracle format datuma, odnosno `dd-Mon-yyyy`. Polje `nv_src_c_cityid` predstavlja strani kljuc odnosno vezu sa tabelom `nv_src_city`, tako da i to mozemo izgenerisati kao integer u opsegu u kom su kljucevi koje smo uneli (na Mockaroo-u je to `number` sa parametrima `min: 1`, `max: 25`, `decimals: 0`) .
+`STAO NA SEDS_20211110_090606-Meeting Recording.mp4 01:32:10`

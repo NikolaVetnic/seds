@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="project_olap" id="CB5E3747-EA73-2413-4032-CC6AF4C31717" version="3.5">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-17 18:48:36 UTC</createdTime>
+<ownerDesignName>project_olap</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>CB5E3747-EA73-2413-4032-CC6AF4C31717</designId>
+</OSDM_Design>

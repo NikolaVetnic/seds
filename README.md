@@ -85,6 +85,12 @@ Potrebno je popuniti svaku od sedam tabela OLTP baze:
 -   `NV_SRC_Order`: ova tabela se popunjava pomocu [skripte](https://github.com/NikolaVetnic/seds/blob/master/seds_fillScript_Order.md)
 -   `NV_SRC_OrderItem`: ovu tabelu je moguce generisati ili popuniti pomocu [skripte](https://github.com/NikolaVetnic/seds/blob/master/seds_fillScript_OrderItem.md)
 
+## 3 Vezbe
+
+Posmatramo semu DW odnosno OLAP baze podataka: `NV_DW_Sales` je tabela cinjenica, `NV_DW_Time` predstavlja vremensku dimenziju, `NV_DW_Customer` je prostorna dimenzija (dalje povezana sa `NV_DW_City`, `NV_DW_Region` i `NV_DW_Country`), na kraju imamo i `NV_DW_Product` koja se razlikuje od izvorne (`ProductFamily` obelezje je izdvojeno u zasebnu tabelu).
+
+Za ECTL procese, odnosno za transformaciju koristi se alat Pentaho Data Integration, konkretno Spoon je alat u kome se crtaju ECTL procesi. To radimo tako sto kreiramo novu transformaciju (buduci da transformisemo podatke iz jednog oblika u drugi) ciji input mogu biti razlicite stvari (CSV fajlovi, _data grid_-ovi, _table input_ - sto cemo i mi koristiti, itd.), a isto vazi i za output (konkretno cemo koristiti _table output_).
+
 ## X Projekat
 
 ### X.1 Beleske sa casa

@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5F949040-1357-817F-7FBC-3A94858A840B" name="NVP_DW_City">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-17 18:58:00 UTC</createdTime>
+<ownerDesignName>project_olap</ownerDesignName>
+<engineerTo>
+<item key="9E49041C-82BC-1074-5D0F-A7D34ABA0473" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cityId" id="81678043-EF1A-9265-5066-921BBE1FB521">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-17 18:58:06 UTC</createdTime>
+<ownerDesignName>project_olap</ownerDesignName>
+<engineerTo>
+<item key="9E49041C-82BC-1074-5D0F-A7D34ABA0473" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cityName" id="6300665B-973E-D6DD-2F5B-9CF74784A6BD">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-17 18:58:22 UTC</createdTime>
+<ownerDesignName>project_olap</ownerDesignName>
+<engineerTo>
+<item key="9E49041C-82BC-1074-5D0F-A7D34ABA0473" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="regId" id="5FD3917C-6160-A324-AFEF-0B6730916E5D">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-17 18:59:54 UTC</createdTime>
+<generatorID>85DFC993-9F76-D216-5C40-A81DCAA6AA1F</generatorID>
+<ownerDesignName>project_olap</ownerDesignName>
+<engineerTo>
+<item key="9E49041C-82BC-1074-5D0F-A7D34ABA0473" value="true"/>
+</engineerTo>
+<referedAttribute>2DF17BEC-CD9E-5155-A0A4-801E686E3DA5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="42CB5E14-35C1-FCEA-5108-99297C4D4DF9" name="NVP_DW_City PK">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2022-12-17 18:58:20 UTC</createdTime>
+<ownerDesignName>project_olap</ownerDesignName>
+<engineerTo>
+<item key="9E49041C-82BC-1074-5D0F-A7D34ABA0473" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>81678043-EF1A-9265-5066-921BBE1FB521</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="868A1A69-A7BA-73BA-7ABD-687CABA1C16D" containerWithKeyObject="48EE2FB2-E8C5-E037-2E1A-A20F96388114" localFKIndex="6A71126D-F5A8-D6DD-0CBE-8AF46D2F3B06" name="NVP_DW_Time_FK">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2023-01-10 21:24:51 UTC</createdTime>
+<generatorID>905E87BF-5AC5-2FC0-4D85-0D02E8ED1530</generatorID>
+<ownerDesignName>project_olap</ownerDesignName>
+<referredTableLongName>NVP_DW_Time</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>2A59ECE3-D6DD-0920-4399-F307DF836FB3</referredTableID>
+<keyObject>08B303CB-0EA8-EF00-53D3-B6864E02AA0F</keyObject>
+<referredKeyID>08B303CB-0EA8-EF00-53D3-B6864E02AA0F</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>timeId</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

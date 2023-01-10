@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9A4D5CAC-8746-FD88-5DC3-46A4514C4691" containerWithKeyObject="947843D2-4045-4BD9-9F11-C78FE186E5BA" localFKIndex="27DA1681-D031-C832-B44D-8DCF844BFD9E" name="NVP_DW_RatingClass_FKv1">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2023-01-10 21:24:51 UTC</createdTime>
+<generatorID>0FD4D278-1BEA-9CDB-4BB9-1D7A313BC2E6</generatorID>
+<ownerDesignName>project_olap</ownerDesignName>
+<referredTableLongName>NVP_DW_RatingClass</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>530C046D-C937-34F4-AC31-6BCB3D73CEAF</referredTableID>
+<keyObject>7C27915B-1541-DF14-569D-6CCE9ECE542F</keyObject>
+<referredKeyID>7C27915B-1541-DF14-569D-6CCE9ECE542F</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>rc</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

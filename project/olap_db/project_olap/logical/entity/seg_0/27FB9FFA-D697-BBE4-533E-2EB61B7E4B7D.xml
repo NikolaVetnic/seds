@@ -106,8 +106,9 @@
 <createdBy>nikolavetnic</createdBy>
 <createdTime>2022-12-17 19:02:26 UTC</createdTime>
 <ownerDesignName>project_olap</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="9E49041C-82BC-1074-5D0F-A7D34ABA0473" value="true"/>
+<item key="9E49041C-82BC-1074-5D0F-A7D34ABA0473" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

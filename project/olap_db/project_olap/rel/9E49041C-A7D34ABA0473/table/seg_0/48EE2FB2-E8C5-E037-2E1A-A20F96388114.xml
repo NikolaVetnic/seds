@@ -1,0 +1,164 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="48EE2FB2-E8C5-E037-2E1A-A20F96388114" name="NVP_DW_Tour">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2023-01-10 21:24:51 UTC</createdTime>
+<generatorID>0A972C5A-3072-6E0F-E59A-8A94DFE6555F</generatorID>
+<ownerDesignName>project_olap</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="tourId" id="5AE8C613-17DB-BAEA-14FE-80920AE668F8">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2023-01-10 21:24:51 UTC</createdTime>
+<generatorID>B60D5FBB-2E78-7006-2E6A-F6EC5D5B2097</generatorID>
+<ownerDesignName>project_olap</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tourPrice" id="A18F13E3-BDC1-66CE-2D1F-6FE27E6DD271">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2023-01-10 21:24:51 UTC</createdTime>
+<generatorID>A66EC2F1-E4D4-61E8-0333-9127BB328ED9</generatorID>
+<ownerDesignName>project_olap</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NVP_DW_Time_timeId" id="81F9CFED-B0EB-8CA3-222E-FF6D7E754173">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2023-01-10 21:24:51 UTC</createdTime>
+<generatorID>7F65856E-C70A-0C90-BEDE-63CBE8EC2714</generatorID>
+<ownerDesignName>project_olap</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="868A1A69-A7BA-73BA-7ABD-687CABA1C16D" referredColumn="CE5EB476-F86C-F9C1-352D-52154F67F26B"/>
+</associations>
+</Column>
+<Column name="tourAgentName" id="CC5F9E1D-4CF6-4763-4929-4679198CF7C1">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2023-01-10 21:24:51 UTC</createdTime>
+<generatorID>0D0C75E5-3FF1-54C6-1A67-46FB8F522B39</generatorID>
+<ownerDesignName>project_olap</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>300</dataTypeSize>
+<ownDataTypeParameters>300,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NVP_DW_City_cityId" id="9FC7EB81-EE94-26D4-A0BF-3C460678BB23">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2023-01-10 21:24:51 UTC</createdTime>
+<generatorID>30AE4C36-58C7-323A-C865-E8E43AC2DC49</generatorID>
+<ownerDesignName>project_olap</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F405CE3A-2800-3C9C-1740-0491EAED9300" referredColumn="C6B9AD17-AA1F-FFEB-8B62-F3EA686AE6FD"/>
+</associations>
+</Column>
+<Column name="NVP_DW_TourSales_tsId" id="D63F2292-567B-D85E-5837-10601C634796">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2023-01-10 21:24:51 UTC</createdTime>
+<generatorID>B378A60B-1B4C-3DCE-27C2-3CFBD89A27D0</generatorID>
+<ownerDesignName>project_olap</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9E280ECF-3541-03DD-8172-E5F982DF1D29" referredColumn="DB379D28-E701-7342-2C14-3965E4A44F97"/>
+</associations>
+</Column>
+<Column name="NVP_DW_RatingClass_rc" id="0694D4DE-1597-E4A1-4BFF-4052647D0FE3">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2023-01-10 21:24:51 UTC</createdTime>
+<generatorID>0C134963-F474-517C-352A-506ADAD9C213</generatorID>
+<ownerDesignName>project_olap</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="480EC51B-CE34-C5ED-2342-C4B2CB6D5146" referredColumn="C2B2E4C0-BA72-D4B0-75C3-8AB4CEB6071F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FBCE86E1-2390-6B4B-B458-4C75226F7936" name="NVP_DW_Tour_PK">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2023-01-10 21:24:51 UTC</createdTime>
+<generatorID>30F6A34C-165F-2B51-8094-833FF34D61BD</generatorID>
+<ownerDesignName>project_olap</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5AE8C613-17DB-BAEA-14FE-80920AE668F8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A1557B84-4315-AC37-C53E-7CD2A2C79C74" name="NVP_DW_City_FKv1">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2023-01-10 21:24:51 UTC</createdTime>
+<generatorID>2507DB6E-B8DC-98BE-EE57-5B9369E2B729</generatorID>
+<ownerDesignName>project_olap</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9FC7EB81-EE94-26D4-A0BF-3C460678BB23"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ABE3E5D8-1143-56EF-2846-17DD0141B91E" name="NVP_DW_RatingClass_FK">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2023-01-10 21:24:51 UTC</createdTime>
+<generatorID>B01F5F4B-5F1E-C835-7749-27310E9AD892</generatorID>
+<ownerDesignName>project_olap</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0694D4DE-1597-E4A1-4BFF-4052647D0FE3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6A71126D-F5A8-D6DD-0CBE-8AF46D2F3B06" name="NVP_DW_Time_FK">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2023-01-10 21:24:51 UTC</createdTime>
+<generatorID>905E87BF-5AC5-2FC0-4D85-0D02E8ED1530</generatorID>
+<ownerDesignName>project_olap</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="81F9CFED-B0EB-8CA3-222E-FF6D7E754173"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7660139B-6E89-CED0-FB70-013D1C5FC6C0" name="NVP_DW_TourSales_FK">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2023-01-10 21:24:51 UTC</createdTime>
+<generatorID>9FEA7A15-3AC7-1C69-8905-3AB9F7D7EC3C</generatorID>
+<ownerDesignName>project_olap</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D63F2292-567B-D85E-5837-10601C634796"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

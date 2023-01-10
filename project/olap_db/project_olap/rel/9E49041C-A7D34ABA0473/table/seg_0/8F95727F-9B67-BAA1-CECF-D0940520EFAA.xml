@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8F95727F-9B67-BAA1-CECF-D0940520EFAA" name="NVP_DW_Customer">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2023-01-10 21:24:51 UTC</createdTime>
+<generatorID>9F6260F1-3803-31AB-0029-91949FD34738</generatorID>
+<ownerDesignName>project_olap</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="custId" id="3AD672F7-4474-A266-B430-1B9ED608EBBD">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2023-01-10 21:24:51 UTC</createdTime>
+<generatorID>C6DE3D32-89C5-64E4-CA67-3007A120F321</generatorID>
+<ownerDesignName>project_olap</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="custName" id="1D2E07ED-9D53-B8A1-D343-07531807CDD4">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2023-01-10 21:24:51 UTC</createdTime>
+<generatorID>9E0E1A64-1D95-3478-298C-9D2DFCAAADDF</generatorID>
+<ownerDesignName>project_olap</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>400</dataTypeSize>
+<ownDataTypeParameters>400,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="custAddress" id="EEE57CEC-6650-7111-B2CB-62D96CB0BC83">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2023-01-10 21:24:51 UTC</createdTime>
+<generatorID>F9027935-DFB8-27BE-EF82-378A3BCD4CC0</generatorID>
+<ownerDesignName>project_olap</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="custPhone" id="6984EA80-42FB-48B0-329F-AA03EE8D853E">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2023-01-10 21:24:51 UTC</createdTime>
+<generatorID>416FC2B6-E046-FCF0-9BCB-00FFA64F1BF0</generatorID>
+<ownerDesignName>project_olap</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="custAge" id="8D52CC90-A22E-FC1A-8E1E-B820980B57FD">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2023-01-10 21:24:51 UTC</createdTime>
+<generatorID>FFDA5EFF-614A-4B78-26B6-0D2BD35E8B46</generatorID>
+<ownerDesignName>project_olap</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NVP_DW_City_cityId" id="F3114CEB-D7CD-B200-8D15-7626A84418CF">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2023-01-10 21:24:51 UTC</createdTime>
+<generatorID>6FC875DF-182A-2918-1519-210AAAACA849</generatorID>
+<ownerDesignName>project_olap</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="52D4DE12-3DD7-89C7-2FC9-8EB35F1D90D9" referredColumn="C6B9AD17-AA1F-FFEB-8B62-F3EA686AE6FD"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6A0FC8B5-5305-5ED9-285A-69966D42BBB6" name="NVP_DW_Customer_PK">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2023-01-10 21:24:51 UTC</createdTime>
+<generatorID>79C82AD8-D7F3-ADB0-320E-385DA5992ECF</generatorID>
+<ownerDesignName>project_olap</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3AD672F7-4474-A266-B430-1B9ED608EBBD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1BA5229E-6CF9-C9EC-2164-CF610C26176C" name="NVP_DW_City_FK">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2023-01-10 21:24:51 UTC</createdTime>
+<generatorID>0BA1EAA2-F0C3-4926-B7A7-CC408CB21A7E</generatorID>
+<ownerDesignName>project_olap</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F3114CEB-D7CD-B200-8D15-7626A84418CF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

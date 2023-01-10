@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="time_tour" directorySegmentName="seg_0" id="905E87BF-5AC5-2FC0-4D85-0D02E8ED1530">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2023-01-10 21:18:40 UTC</createdTime>
+<ownerDesignName>project_olap</ownerDesignName>
+<engineerTo>
+<item key="9E49041C-82BC-1074-5D0F-A7D34ABA0473" value="true"/>
+</engineerTo>
+<sourcePk>B0ACD6E6-3604-1471-9CD3-0560940D09D1</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>27FB9FFA-D697-BBE4-533E-2EB61B7E4B7D</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>0A972C5A-3072-6E0F-E59A-8A94DFE6555F</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

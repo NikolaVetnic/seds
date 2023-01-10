@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="tour_ex" directorySegmentName="seg_0" id="B0912EBB-525A-6247-8930-744D07946FC9">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2023-01-10 16:47:33 UTC</createdTime>
+<ownerDesignName>project_olap</ownerDesignName>
+<engineerTo>
+<item key="9E49041C-82BC-1074-5D0F-A7D34ABA0473" value="true"/>
+</engineerTo>
+<sourcePk>30F6A34C-165F-2B51-8094-833FF34D61BD</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>0A972C5A-3072-6E0F-E59A-8A94DFE6555F</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>B7744E59-7FA9-86D3-3E13-722959C64B72</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

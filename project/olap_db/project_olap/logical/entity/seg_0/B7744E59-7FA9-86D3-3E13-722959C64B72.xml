@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9F6260F1-3803-31AB-0029-91949FD34738" name="NVP_DW_Customer">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B7744E59-7FA9-86D3-3E13-722959C64B72" name="NVP_DW_Excursion">
 <createdBy>nikolavetnic</createdBy>
-<createdTime>2022-12-17 18:49:44 UTC</createdTime>
+<createdTime>2023-01-10 16:45:35 UTC</createdTime>
 <ownerDesignName>project_olap</ownerDesignName>
 <engineerTo>
 <item key="9E49041C-82BC-1074-5D0F-A7D34ABA0473" value="true"/>
@@ -15,9 +15,9 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="custId" id="C6DE3D32-89C5-64E4-CA67-3007A120F321">
+<Attribute name="exId" id="C0A35DCA-E2E3-71F7-BB44-5F680D874551">
 <createdBy>nikolavetnic</createdBy>
-<createdTime>2022-12-17 18:52:34 UTC</createdTime>
+<createdTime>2023-01-10 16:45:48 UTC</createdTime>
 <ownerDesignName>project_olap</ownerDesignName>
 <engineerTo>
 <item key="9E49041C-82BC-1074-5D0F-A7D34ABA0473" value="true"/>
@@ -27,9 +27,9 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="custName" id="9E0E1A64-1D95-3478-298C-9D2DFCAAADDF">
+<Attribute name="exGuideName" id="0CF662DD-A23B-DEE7-DE83-C19B865D08B1">
 <createdBy>nikolavetnic</createdBy>
-<createdTime>2022-12-17 18:52:46 UTC</createdTime>
+<createdTime>2023-01-10 16:46:48 UTC</createdTime>
 <ownerDesignName>project_olap</ownerDesignName>
 <engineerTo>
 <item key="9E49041C-82BC-1074-5D0F-A7D34ABA0473" value="true"/>
@@ -37,51 +37,13 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>400</dataTypeSize>
-<ownDataTypeParameters>400,,</ownDataTypeParameters>
+<dataTypeSize>300</dataTypeSize>
+<ownDataTypeParameters>300,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="custAddress" id="F9027935-DFB8-27BE-EF82-378A3BCD4CC0">
+<Attribute name="cityId" id="F17EB134-9389-2555-B708-4B4A701EF655">
 <createdBy>nikolavetnic</createdBy>
-<createdTime>2022-12-17 18:56:07 UTC</createdTime>
-<ownerDesignName>project_olap</ownerDesignName>
-<engineerTo>
-<item key="9E49041C-82BC-1074-5D0F-A7D34ABA0473" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>500</dataTypeSize>
-<ownDataTypeParameters>500,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="custPhone" id="416FC2B6-E046-FCF0-9BCB-00FFA64F1BF0">
-<createdBy>nikolavetnic</createdBy>
-<createdTime>2022-12-17 18:56:19 UTC</createdTime>
-<ownerDesignName>project_olap</ownerDesignName>
-<engineerTo>
-<item key="9E49041C-82BC-1074-5D0F-A7D34ABA0473" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50</dataTypeSize>
-<ownDataTypeParameters>50,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="custAge" id="FFDA5EFF-614A-4B78-26B6-0D2BD35E8B46">
-<createdBy>nikolavetnic</createdBy>
-<createdTime>2022-12-17 18:56:34 UTC</createdTime>
-<ownerDesignName>project_olap</ownerDesignName>
-<engineerTo>
-<item key="9E49041C-82BC-1074-5D0F-A7D34ABA0473" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="cityId" id="6FC875DF-182A-2918-1519-210AAAACA849">
-<createdBy>nikolavetnic</createdBy>
-<createdTime>2022-12-17 18:58:50 UTC</createdTime>
-<generatorID>0BA1EAA2-F0C3-4926-B7A7-CC408CB21A7E</generatorID>
+<createdTime>2023-01-10 16:47:16 UTC</createdTime>
+<generatorID>6CAC24DB-6C55-DC5E-B853-FDB01879CCE1</generatorID>
 <ownerDesignName>project_olap</ownerDesignName>
 <engineerTo>
 <item key="9E49041C-82BC-1074-5D0F-A7D34ABA0473" value="true"/>
@@ -92,11 +54,39 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="tourId" id="F869320E-D509-C415-9A79-E2797BE83A01">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2023-01-10 16:47:33 UTC</createdTime>
+<generatorID>B0912EBB-525A-6247-8930-744D07946FC9</generatorID>
+<ownerDesignName>project_olap</ownerDesignName>
+<engineerTo>
+<item key="9E49041C-82BC-1074-5D0F-A7D34ABA0473" value="true"/>
+</engineerTo>
+<referedAttribute>B60D5FBB-2E78-7006-2E6A-F6EC5D5B2097</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rc" id="B8A22FA2-D4AC-98D3-974E-B181AD0D6124">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2023-01-10 16:47:43 UTC</createdTime>
+<generatorID>0FD4D278-1BEA-9CDB-4BB9-1D7A313BC2E6</generatorID>
+<ownerDesignName>project_olap</ownerDesignName>
+<engineerTo>
+<item key="9E49041C-82BC-1074-5D0F-A7D34ABA0473" value="true"/>
+</engineerTo>
+<referedAttribute>6E88671F-FC51-5995-97A1-EB4D6F2EF855</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="79C82AD8-D7F3-ADB0-320E-385DA5992ECF" name="NVP_DW_Customer PK">
+<identifier id="7CBE25F3-4F30-6789-59AE-64992C8516D5" name="NVP_DW_Excursion PK">
 <createdBy>nikolavetnic</createdBy>
-<createdTime>2022-12-17 18:56:57 UTC</createdTime>
+<createdTime>2023-01-10 16:45:56 UTC</createdTime>
 <ownerDesignName>project_olap</ownerDesignName>
 <shouldEngineer>false</shouldEngineer>
 <engineerTo>
@@ -104,7 +94,7 @@
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>C6DE3D32-89C5-64E4-CA67-3007A120F321</attributeRef>
+<attributeRef>C0A35DCA-E2E3-71F7-BB44-5F680D874551</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

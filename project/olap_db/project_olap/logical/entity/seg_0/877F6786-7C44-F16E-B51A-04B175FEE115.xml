@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="877F6786-7C44-F16E-B51A-04B175FEE115" name="NVP_DW_RatingClass">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2023-01-10 16:39:51 UTC</createdTime>
+<ownerDesignName>project_olap</ownerDesignName>
+<engineerTo>
+<item key="9E49041C-82BC-1074-5D0F-A7D34ABA0473" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="rc" id="6E88671F-FC51-5995-97A1-EB4D6F2EF855">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2023-01-10 16:40:03 UTC</createdTime>
+<ownerDesignName>project_olap</ownerDesignName>
+<engineerTo>
+<item key="9E49041C-82BC-1074-5D0F-A7D34ABA0473" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rcName" id="B4C0653B-827B-A4EF-B768-B56066921CB0">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2023-01-10 16:40:10 UTC</createdTime>
+<ownerDesignName>project_olap</ownerDesignName>
+<engineerTo>
+<item key="9E49041C-82BC-1074-5D0F-A7D34ABA0473" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4CCD7A42-6368-4E12-0360-AB7ED9097013" name="NVP_DW_RatingClass PK">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2023-01-10 16:40:08 UTC</createdTime>
+<ownerDesignName>project_olap</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="9E49041C-82BC-1074-5D0F-A7D34ABA0473" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6E88671F-FC51-5995-97A1-EB4D6F2EF855</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

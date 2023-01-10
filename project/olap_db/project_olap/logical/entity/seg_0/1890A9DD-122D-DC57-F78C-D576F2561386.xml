@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9F6260F1-3803-31AB-0029-91949FD34738" name="NVP_DW_Customer">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1890A9DD-122D-DC57-F78C-D576F2561386" name="NVP_DW_TourSales">
 <createdBy>nikolavetnic</createdBy>
-<createdTime>2022-12-17 18:49:44 UTC</createdTime>
+<createdTime>2023-01-10 16:33:06 UTC</createdTime>
 <ownerDesignName>project_olap</ownerDesignName>
 <engineerTo>
 <item key="9E49041C-82BC-1074-5D0F-A7D34ABA0473" value="true"/>
@@ -15,9 +15,9 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="custId" id="C6DE3D32-89C5-64E4-CA67-3007A120F321">
+<Attribute name="tsId" id="E2DAC52F-C68D-3AFA-D47B-3F8ED093E1AA">
 <createdBy>nikolavetnic</createdBy>
-<createdTime>2022-12-17 18:52:34 UTC</createdTime>
+<createdTime>2023-01-10 16:33:13 UTC</createdTime>
 <ownerDesignName>project_olap</ownerDesignName>
 <engineerTo>
 <item key="9E49041C-82BC-1074-5D0F-A7D34ABA0473" value="true"/>
@@ -27,48 +27,9 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="custName" id="9E0E1A64-1D95-3478-298C-9D2DFCAAADDF">
+<Attribute name="tsQuantity" id="FDF9A3AC-2D28-E541-7669-5015483187DB">
 <createdBy>nikolavetnic</createdBy>
-<createdTime>2022-12-17 18:52:46 UTC</createdTime>
-<ownerDesignName>project_olap</ownerDesignName>
-<engineerTo>
-<item key="9E49041C-82BC-1074-5D0F-A7D34ABA0473" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>400</dataTypeSize>
-<ownDataTypeParameters>400,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="custAddress" id="F9027935-DFB8-27BE-EF82-378A3BCD4CC0">
-<createdBy>nikolavetnic</createdBy>
-<createdTime>2022-12-17 18:56:07 UTC</createdTime>
-<ownerDesignName>project_olap</ownerDesignName>
-<engineerTo>
-<item key="9E49041C-82BC-1074-5D0F-A7D34ABA0473" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>500</dataTypeSize>
-<ownDataTypeParameters>500,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="custPhone" id="416FC2B6-E046-FCF0-9BCB-00FFA64F1BF0">
-<createdBy>nikolavetnic</createdBy>
-<createdTime>2022-12-17 18:56:19 UTC</createdTime>
-<ownerDesignName>project_olap</ownerDesignName>
-<engineerTo>
-<item key="9E49041C-82BC-1074-5D0F-A7D34ABA0473" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50</dataTypeSize>
-<ownDataTypeParameters>50,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="custAge" id="FFDA5EFF-614A-4B78-26B6-0D2BD35E8B46">
-<createdBy>nikolavetnic</createdBy>
-<createdTime>2022-12-17 18:56:34 UTC</createdTime>
+<createdTime>2023-01-10 16:34:00 UTC</createdTime>
 <ownerDesignName>project_olap</ownerDesignName>
 <engineerTo>
 <item key="9E49041C-82BC-1074-5D0F-A7D34ABA0473" value="true"/>
@@ -78,15 +39,39 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="cityId" id="6FC875DF-182A-2918-1519-210AAAACA849">
+<Attribute name="tsCreatedFirst" id="5C063E49-CA23-E2E2-CF54-28CC49574703">
 <createdBy>nikolavetnic</createdBy>
-<createdTime>2022-12-17 18:58:50 UTC</createdTime>
-<generatorID>0BA1EAA2-F0C3-4926-B7A7-CC408CB21A7E</generatorID>
+<createdTime>2023-01-10 21:24:30 UTC</createdTime>
 <ownerDesignName>project_olap</ownerDesignName>
 <engineerTo>
 <item key="9E49041C-82BC-1074-5D0F-A7D34ABA0473" value="true"/>
 </engineerTo>
-<referedAttribute>81678043-EF1A-9265-5066-921BBE1FB521</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tsCreatedLast" id="4AAD6C89-3EEF-4A5F-7BB1-3A0ED60CCE86">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2023-01-10 21:24:38 UTC</createdTime>
+<ownerDesignName>project_olap</ownerDesignName>
+<engineerTo>
+<item key="9E49041C-82BC-1074-5D0F-A7D34ABA0473" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="custId" id="7A2CD742-C550-BF6F-86EE-D9B8F3C96358">
+<createdBy>nikolavetnic</createdBy>
+<createdTime>2023-01-10 16:38:38 UTC</createdTime>
+<generatorID>251DDA77-E995-3D0F-961F-D35C22062C89</generatorID>
+<ownerDesignName>project_olap</ownerDesignName>
+<engineerTo>
+<item key="9E49041C-82BC-1074-5D0F-A7D34ABA0473" value="true"/>
+</engineerTo>
+<referedAttribute>C6DE3D32-89C5-64E4-CA67-3007A120F321</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -94,9 +79,9 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="79C82AD8-D7F3-ADB0-320E-385DA5992ECF" name="NVP_DW_Customer PK">
+<identifier id="3B77E67B-A1A5-2F63-F3BF-D59F51A0EF6C" name="NVP_DW_TourSales PK">
 <createdBy>nikolavetnic</createdBy>
-<createdTime>2022-12-17 18:56:57 UTC</createdTime>
+<createdTime>2023-01-10 16:33:22 UTC</createdTime>
 <ownerDesignName>project_olap</ownerDesignName>
 <shouldEngineer>false</shouldEngineer>
 <engineerTo>
@@ -104,7 +89,7 @@
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>C6DE3D32-89C5-64E4-CA67-3007A120F321</attributeRef>
+<attributeRef>E2DAC52F-C68D-3AFA-D47B-3F8ED093E1AA</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

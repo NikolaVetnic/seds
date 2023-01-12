@@ -26,8 +26,8 @@
 
     CREATE TABLE nvp_src_excursion (
         exid                INTEGER NOT NULL,
-        exfrom              TIMESTAMP NOT NULL,
-        exto                TIMESTAMP NOT NULL,
+        exfrom              DATE NOT NULL,
+        exto                DATE NOT NULL,
         exlocation          VARCHAR2(200) NOT NULL,
         exrating            INTEGER NOT NULL,
         nvp_src_guide_guid  INTEGER NOT NULL,

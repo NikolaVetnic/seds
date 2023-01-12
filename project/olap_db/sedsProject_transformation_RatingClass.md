@@ -13,6 +13,16 @@ Table input:
     ORDER BY rcName
 ```
 
+Oracle SQL insert:
+
+```SQL
+    INSERT INTO NVP_DW_RatingClass (rc, rcName) VALUES (1, 'appalling');
+    INSERT INTO NVP_DW_RatingClass (rc, rcName) VALUES (2, 'correct');
+    INSERT INTO NVP_DW_RatingClass (rc, rcName) VALUES (3, 'decent');
+    INSERT INTO NVP_DW_RatingClass (rc, rcName) VALUES (4, 'exceptional');
+    INSERT INTO NVP_DW_RatingClass (rc, rcName) VALUES (5, 'magnificent');
+```
+
 Check:
 
 ```SQL

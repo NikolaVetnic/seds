@@ -6,6 +6,14 @@ Table input:
     ORDER BY countryId
 ```
 
+Oracle SQL insert:
+
+```SQL
+    INSERT INTO NVP_DW_Country
+        (countryId, countryName)
+    SELECT DISTINCT countryId, countryName FROM NVP_SRC_Region;
+```
+
 Check:
 
 ```SQL

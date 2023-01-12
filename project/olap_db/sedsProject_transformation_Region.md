@@ -6,6 +6,14 @@ Table input:
     ORDER BY regId
 ```
 
+Oracle SQL insert:
+
+```SQL
+    INSERT INTO NVP_DW_Region
+        (regId, regName, NVP_DW_Country_countryId)
+    SELECT regId, regName, countryId FROM NVP_SRC_Region;
+```
+
 Check:
 
 ```SQL

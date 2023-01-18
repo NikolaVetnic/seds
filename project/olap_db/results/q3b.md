@@ -1,3 +1,9 @@
+# Izvestaj #3b
+
+Kakve su ocene (rejtinzi) po gradovima - kao izleta?
+
+## Rezultati
+
 | avgRating | city               | region                      | country             |
 | --------- | ------------------ | --------------------------- | ------------------- |
 | 6.04      | Medvedja           | Jablanicki okrug            | Srbija              |

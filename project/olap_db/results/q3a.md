@@ -1,3 +1,9 @@
+# Izvestaj #3a
+
+Kakve su ocene (rejtinzi) po gradovima - kao putovanja?
+
+## Rezultati
+
 | avgRating | city               | region                      | country             |
 | --------- | ------------------ | --------------------------- | ------------------- |
 | 5.96      | Sremska Mitrovica  | Sremski okrug               | Srbija              |

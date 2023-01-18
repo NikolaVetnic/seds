@@ -1,3 +1,9 @@
+# Izvestaj #2a
+
+Koji grad je najpopularnija destinacija - kao putovanje?
+
+## Rezultati
+
 | toursSold | city               |
 | --------- | ------------------ |
 | 17875     | Kosovska Mitrovica |

@@ -1,3 +1,9 @@
+# Izvestaj #2b
+
+Koji grad je najpopularnija destinacija - kao izlet?
+
+## Rezultati
+
 | excursionsSold | city               |
 | -------------- | ------------------ |
 | 19360          | Kosovska Mitrovica |
